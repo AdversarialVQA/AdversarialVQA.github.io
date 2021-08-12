@@ -1,3 +1,3 @@
 # Adversarial VQA (AVQA) Benchmark
 
-Coming soon....
+https://adversarialvqa.github.io/
