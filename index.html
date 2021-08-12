@@ -30,148 +30,227 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"><b>Home</b></a>
                         </li>
-                                                
+
                         <li class="nav-item">
+                            <a class="nav-link" href="people.html">People</a>
+                        </li>
+                                                
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="" target="_blank">Explore</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="" target="_blank">Leaderboard</a>
-                        </li>
-                                                
-                        <li class="nav-item">
-                            <a class="nav-link" href="" target="_blank">Download</a>
-                        </li>
-                                                
-                        <li class="nav-item">
-                            <a class="nav-link" href="" target="_blank">Paper</a>
-                        </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/VALUE-Leaderboard/StarterCode" target="_blank">Code</a>
-                    </li> -->
-                        
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="submission.html">Submission</a>
-                        </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="" target="_blank">Paper</a>
                         </li> -->
+                                                
+                        <li class="nav-item">
+                            <a class="nav-link" href="download.html">Download</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="jumbotron">
+        <!-- <div class="jumbotron">
             <div class="container">
             <h1 class="display-5 sharepoint-dark-blue">Meet Adversarial VQA!</h1>
             <p class="lead sharepoint-dark-blue">A new VQA Benchmark that is adversarially collected with Human-And-Model-in-the-Loop for evaluating the robustness of state-of-the-art VQA models.</p>
             </div>
+        </div> -->
+        <br/>
+        <br/>
+        <div class="container"  align="justify">
+            <div class="row">
+                <div class="col-lg-5" style="padding-left: 1em;">
+                        <h3 style="font-size:20px; font-weight: 200;" align="left">What is Adversarial VQA?
+                        </h3>
+                        <hr>
+                    
+                    <div class="row">
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 thumb" style="-webkit-text-size-adjust:none; -ms-text-size-adjust:none; -moz-text-size-adjust:none; text-size-adjust:none;">
+                            <p style="font-size:15px; font-weight: 200; display: inline;" align="justify">Adversarial VQA is a new VQA benchmark that is collected with Human-And-Model-in-the-Loop for evaluating the robustness of state-of-the-art VQA systems.</p>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                                <ul style="font-size:13px; font-weight: 200; display: inline;" align="justify">
+                                    <li>2 datasets: AdVQA (in-domain) and AVQA (out-of-domain)</li>
+                                    <li>Collected in single round or multiple rounds</li>
+                                    <li>81,253 images (COCO/Conceptual Captions 3M/Fakeddit/VCR)</li>
+                                    <li>1.9 human-verified adversarial questions on average per image</li>
+                                    <li>10 ground truth human-written answers per verified question</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-12">
+                            <p style="font-size:15px; font-weight: 200;" align="justify">
+                                <br><a href="https://groups.google.com/a/vt.edu/forum/#!forum/vqa-cvmlp-g/join">Subscribe</a> to our group for updates!</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                        <h3 style="font-size:20px; font-weight: 200;" align="left">Dataset</h3>
+                        <hr>
+                        <p style="font-size:15px; font-weight: 200;">Details on downloading the latest dataset may be found on the <a href="download.html">download webpage</a>.</p>
+
+                        <ul class="unilist" style="padding-left: 0; padding-bottom: 1em;">
+                            <li>
+                                <p style="font-size:15px; font-weight: 600; display: inline;" align="justify">August 2021: Full release (v1.0)</p>
+                            </li>
+                        </ul>
+                    <div class="row" style="margin-left: 0.5em;" id="shuffle">
+                        <div class="col-lg-5">
+                            <div class="row" style="font-size:14px; font-weight:400; margin-top: -20px; margin-left: 0em;" id="hiddenText11" align=justify>
+                                AdVQA (In-domain)
+
+                                <ul style="font-size:12px; font-weight:200; padding-inline-start: 20px; margin-left: 0em;">
+                                    <li>Collected in single round</li>
+                                    <li>41,807 COCO images<br>(only for val/test)</li>
+                                    <li>46,807 questions</li>
+                                    <li>468,070 human-written answers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row" style="font-size:14px; font-weight:400; margin-top: -20px; margin-left: 0em;" id="hiddenText11" align=justify>
+                                AVQA (Out-of-domain)
+
+                                <ul style="font-size:12px; font-weight:200; padding-inline-start: 20px; margin-left: 0em;">
+                                    <li>Collected with 3 rounds</li>
+                                    <li>39,446 images from Conceptual Captions/<br>Fakeddit/VCR (for train/val/test)</li>
+                                    <li>104,410 verified questions, 73,075 unverified questions</li>
+                                    <li>1,044,100 human-written answers for verified  questions,<br>
+                                        73,075 VQA model answers for unverified questions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
+        <br/>
+
+        
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h3 style="font-size:20px; font-weight: 200;">Papers</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="shuffle2">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <p style="font-size:20px; font-weight: 200;">
+                        <button type="button" class="btn btn-light" disabled>AdVQA</button> Human-Adversarial Visual Question Answering 
+                        <span style="font-size:15px; font-weight: 200;">[<a href="https://arxiv.org/pdf/2106.02280.pdf" onclick="ga('send', 'event', { eventCategory: 'AdVQA', eventAction: 'AdVQA_Paper', eventLabel: 'AdVQA_Paper'});" target="_blank" >Paper</a>]</span>
+                        <span id="bibtex2" style="font-size:15px; font-weight: 200;">[<a href="#" onclick="document.getElementById('bibtex21').style.display='block'; document.getElementById('bibtex2').style.display='none'; return false;">BibTeX</a>]</span>
+                    </p>
+                    <br/>
+                    <a href="https://arxiv.org/pdf/2106.02280.pdf" onclick="ga('send', 'event', { eventCategory: 'AdVQA', eventAction: 'AdVQA_Paper', eventLabel: 'AdVQA_Paper'});"  target="_blank" ><img src="./image/paper/advqa.png" width=100%  style="border : 2px solid #b3b3b3; border-radius : 0px; display:block; margin:auto;" class="pull-right"></a>
+                    <br>
+                    <br>
+                    
+                    
+                    <div style="display: none;" id="bibtex21">
+                        <p style="font-size:13px; font-weight: 200; width:200%; text-align: left;">
+                            @InProceedings{sheng2021human,
+                            <br> author = {Sheng, Sasha and Singh, Amanpreet and Goswami, Vedanuj and Magana, Jose Alberto Lopez and Galuba, Wojciech and Parikh, Devi and Kiela, Douwe},
+                            <br> title = {Human-Adversarial Visual Question Answering},
+                            <br> journal={arXiv preprint arXiv:2106.02280},
+                            <br> year = {2021},
+                            <br> }
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <p style="font-size:20px; font-weight: 200;">
+                        <button type="button" class="btn btn-light" disabled>AVQA</button> Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models (ICCV 2021) 
+
+                        <span style="font-size:15px; font-weight: 200;">[<a href="https://arxiv.org/pdf/2106.00245.pdf" onclick="ga('send', 'event', { eventCategory: 'AVQA', eventAction: 'AVQA_Paper', eventLabel: 'AVQA_Paper'});" target="_blank" >Paper</a>]</span>
+                        <span id="bibtex2" style="font-size:15px; font-weight: 200;">[<a href="#" onclick="document.getElementById('bibtex11').style.display='block'; document.getElementById('bibtex2').style.display='none'; return false;">BibTeX</a>]</span>
+                    </p>
+                    <br>
+                    <a href="https://arxiv.org/pdf/2106.00245.pdf" onclick="ga('send', 'event', { eventCategory: 'AVQA', eventAction: 'AVQA_Paper', eventLabel: 'AVQA_Paper'});"  target="_blank" ><img src="./image/paper/avqa.png" width=100%  style="border : 2px solid #b3b3b3; border-radius : 0px; display:block; margin:auto;" class="pull-right"></a>
+                    <br>
+                    <br>
+                    <div style="display: none;" id="bibtex11">
+                        <p style="font-size:12px; font-weight: 200; width:150%;">
+                            @InProceedings{li2021adversarial,
+                            <br> author = {Li, Linjie and Lei, Jie and Gan, Zhe and Liu, Jingjing},
+                            <br> title = {Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models},
+                            <br> booktitle = {International Conference on Computer Vision (ICCV)},
+                            <br> year = {2021},
+                            <br> }
+                        </p>
+                    </div>
+                    <!-- <div class="col-lg-10">
+                        <img src="./static/img/yinyang.png" width="400" height="400" style="display:block; margin:auto; margin-left: 180px;" frameborder="0">
+                    </div> -->
+                    <!-- <hr> -->
+                </div> 
+            </div>
+        <!-- </div> -->
+        </div>
+
+        <br/>
+        
+        <!-- <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h3 style="font-size:20px; font-weight: 200;">Feedback</h3>
+                    <hr>
+                    <p style="font-size:18px; font-weight: 200;">
+                        Any feedback is very welcome! Please send it to <a href="mailto:adversarialvqa@googlegroups.com" target="_top">adversarialvqa@googlegroups.com</a>.
+                    </p>
+                </div>
+            </div>
+        </div> -->
 
         <div class="container" align="justify">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>Coming soon...</h4>
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-        <br/>
-
-
-
-        <!-- <div class="container" align="justify">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>Paper</h4>
+                    <h3 style="font-size:20px; font-weight: 200;">Contact</h3>
                     <hr>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <a href="https://arxiv.org/abs/1904.03493" target="_blank">
-                        <img src="image/paper.png" class="rounded img-fluid mx-auto d-block" border="5"/>
-                    </a>
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                        <h6>Please cite our paper as below if you use the VALUE benchmark or starter code.</h6>
-                        <pre><code>
-@InProceedings{Wang_2019_ICCV,
-author = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},
-title = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},
-booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-month = {October},
-year = {2019}
-} 
-                        </code></pre>
-                    </details>
-                </div>
-            </div>
-
-        </div>-->
-
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>People</h4>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
-                    <img src="image/people/linjie_li_cropped.jpg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
-                    <p class="text-center" style="height:5rem;"><b><a href="https://scholar.google.com/citations?user=WR875gYAAAAJ&amp;hl=en" target="_block"> Linjie Li</a></b><br/>Microsoft</p>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
-                    <img src="image/people/jie_lei.jpg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
-                    <p class="text-center" style="height:5rem;"><b><a href="https://www.cs.unc.edu/~jielei/" target="_block">Jie Lei</a></b><br/>UNC Chapel Hill</p>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
-                    <img src="image/people/zhe_cropped.jpg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
-                    <p class="text-center" style="height:5rem;"><b><a href="https://zhegan27.github.io/" target="_block"> Zhe Gan</a></b><br/>Microsoft</p>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
-                    <img src="image/people/jj_cropped.png" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
-                    <p class="text-center" style="height:5rem;"><b><a href="https://www.linkedin.com/in/jingjing-liu-65703431/" target="_block">Jingjing Liu</a></b><br/>Tsinghua University </p>
-                </div>
-
-            </div>
-        </div> -->
-
-        <br/>
-
-        <!-- <div class="container" align="justify">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>Contact</h4>
-                    <hr>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <a href="https://github.com/AdversarialVQA/AdversarialVQA.github.io/issues" target="_blank">
-                         <center><span class="fa-4x ms-blue">
+                    <a href="mailto:adversarialvqa@googlegroups.com" target="_blank">
+                        <center><span class="fa-4x ms-blue">
                             <i class="far fa-envelope"></i>
                         </span></center>
                     </a>
                     <br/>
-                    <center><h6>Have any questions or suggestions? Feel free to submit an issue to <a href="https://github.com/AdversarialVQA/AdversarialVQA.github.io">our GitHub repository</a>!</h6></center>
+                    <center>
+                        <p style="font-size:18px; font-weight: 200;">Have any questions or suggestions? Feel free to reach us at adversarialvqa@googlegroups.com!</p>
+                    </center>
                 </div>
             </div>
 
-        </div> -->
+        </div>
+
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sorttable.js"></script>
+        <!-- <script src="js/shuffle_div.js"></script> -->
+        <script>
+            var parent = document.getElementById("shuffle");
+            var divs = parent.children;
+            var frag = document.createDocumentFragment();
+            while (divs.length) {
+                frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
+            }
+            parent.appendChild(frag);
+        </script>
+        <script>
+            var parent = document.getElementById("shuffle2");
+            var divs = parent.children;
+            var frag = document.createDocumentFragment();
+            while (divs.length) {
+                frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
+            }
+            parent.appendChild(frag);
+        </script>
     </body>
 </html>

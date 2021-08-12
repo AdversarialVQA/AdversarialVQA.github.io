@@ -233,3 +233,38 @@ html {
     background-color:#00A4EF;
     /* opacity:0.5; */
     color:white}
+
+  .team * {
+      text-align: center;
+      font-weight: 400;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .team h1 {
+      font-size: 30px;
+      line-height: 60px;
+  }
+  
+  .team.row.large-6 br {
+      padding-bottom: 20px;
+  }
+
+
+.home_team_picture {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+a img {
+  border: none;
+}
+.unilist li {
+  list-style: none;
+  line-height: 1.5em;
+}
+.download_table li p {
+  margin-bottom: .5em;
+}
