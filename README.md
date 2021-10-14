@@ -4,4 +4,4 @@ https://adversarialvqa.github.io/
 
 TODO:
 - Add `explore` tab
-- Add `leaderboard` tab
+- Add `Evaluation` tab

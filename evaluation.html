@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/15106f0a68.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Adversarial VQA</title>
+        <meta name="description" content="Adversarial VQA is a benchmark built with human-and-model-in-the-loop, to test robustness of VQA models.">
+        <meta name="keywords" content="Vision-and-Language Benchmark, Visual Question Answering">
+        <meta name="author" content="Adversarial VQA">
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>Adversarial VQA</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="people.html">People</a>
+                        </li>
+                                                
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">Explore</a>
+                        </li> -->
+                                                
+                        <li class="nav-item ">
+                            <a class="nav-link" href="download.html">Download</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="evaluation.html">Evaluation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br/>
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h3 style="font: size 20px; font-weight: 200;">Evaluation Server</h3>
+                    <hr>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb" style="text-align:center;">
+                    <p style="font-size:15px; font-weight: 200; text-align:left;">
+                        We are hosting our evaluation server on <a href="https://dynabench.org/tasks/vqa">Dynabench</a>. You must register first in order to submit prediction files/models for evaluation. Follow <a href="https://dynabench.org/register">this link</a> to sign up.
+                        <br>
+                    </p>
+                    <p style="font-size:15px; font-weight: 200; text-align:left;"><button type="button" class="btn btn-info btn-sm" disabled>[Submitting prediction files]</button>  The prediction files must be in <a href="https://jsonlines.org/">jsonl</a> format and each line follows the data structure below:</p>
+                    <p style="font-size:15px; font-weight: 200; border-style: solid;
+                    border-width: 1px; text-align:left; padding:5px;"><code>{<br>
+                        "uid" : question id,<br>
+                        "answer" : str,<br>
+                        }<br>
+                        </code></p>
+                    <p style="font-size:15px; font-weight: 200; text-align:left;">
+                        You can also download the sample predictions by the majority baseline model following the links: AVQA <a href="https://datarelease.blob.core.windows.net/avqa/sample_submissions/sample_pred_avqa_val.jsonl">val</a> &  <a href="https://datarelease.blob.core.windows.net/avqa/sample_submissions/sample_pred_avqa_test.jsonl">test</a>, AdVQA <a href="https://datarelease.blob.core.windows.net/avqa/sample_submissions/sample_pred_advqa_val.jsonl">val</a> &  <a href="https://datarelease.blob.core.windows.net/avqa/sample_submissions/sample_pred_advqa_test.jsonl">test</a>. 
+                    </p>
+                    <p style="font-size:15px; font-weight: 200; text-align:left;"><button type="button" class="btn btn-info btn-sm" disabled>[Submitting models]</button>  Coming soon...</p>
+                </div>
+            </div>
+            
+        </div>
+        <br/>
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h3 style="font: size 20px; font-weight: 200;">Evaluation Code</h3>
+                    <hr>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb" style="text-align:center;">
+                    <p style="font-size:15px; font-weight: 200; text-align:left;">
+                        We follow the same evaluation protocol as <a href="https://visualqa.org/evaluation.html">VQA</a>. The official evaluation code is available  <a href="https://github.com/facebookresearch/dynabench/blob/main/evaluation/metrics/vqa_accuracy.py">here</a>.
+                    </p>
+                </div>
+                <br/>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sorttable.js"></script>
+        <!-- <script src="js/shuffle_div.js"></script> -->
+        <script>
+            var button = document.getElementById('bibtex1'); // Assumes element with id='button'
+            button.onclick = function() {
+                var div = document.getElementById('bibtex11');
+                var div1 = document.getElementById('bibtex12');
+                var div2 = document.getElementById('bibtex13');
+                if (div.style.display === 'block') {
+                    div.style.display = 'none';
+                    div1.style.display = 'none';
+                    div2.style.display = 'none';
+                } else {
+                    div.style.display = 'block';
+                    div1.style.display = 'block';
+                    div2.style.display = 'block';
+                }
+            };
+        </script>
+        <script>
+            var button = document.getElementById('bibtex2'); // Assumes element with id='button'
+            button.onclick = function() {
+                var div = document.getElementById('bibtex21');
+                var div1 = document.getElementById('bibtex22');
+                var div2 = document.getElementById('bibtex23');
+                if (div.style.display === 'block') {
+                    div.style.display = 'none';
+                    div1.style.display = 'none';
+                    div2.style.display = 'none';
+                } else {
+                    div.style.display = 'block';
+                    div1.style.display = 'block';
+                    div2.style.display = 'block';
+                }
+            };
+        </script>
+    </body>
+</html>
